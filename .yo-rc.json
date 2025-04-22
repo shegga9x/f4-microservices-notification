@@ -1,0 +1,27 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 4,
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "ms_notification",
+    "cacheProvider": "redis",
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "enableSwaggerCodegen": true,
+    "entities": ["Notification"],
+    "jhipsterVersion": "8.10.0",
+    "jwtSecretKey": "YTI4MzJiNWFlY2IxZjczNjQ0MDBhZjU3YTNlOWFlMGM5OTliMzY2ZWViMTYxMTgzN2UwM2JmZTYxMzRiYmVhYmJhNTQyNGM1MDY3N2I3YTc0Y2YwZDA2NWIwM2YwZTc1YWY2NjJmZGU1NGRiNWE5MGU2Njk1NGE2OWQ3NWNkZmQ=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1745299455000,
+    "messageBroker": "kafka",
+    "monorepository": true,
+    "nativeLanguage": "en",
+    "packageName": "com.f4.notification",
+    "prodDatabaseType": "mysql",
+    "serverPort": "8083",
+    "serviceDiscoveryType": "consul",
+    "skipClient": true,
+    "skipCommitHook": true,
+    "skipUserManagement": true
+  }
+}
