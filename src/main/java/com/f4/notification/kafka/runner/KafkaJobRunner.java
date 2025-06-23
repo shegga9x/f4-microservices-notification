@@ -16,7 +16,7 @@ import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.stereotype.Component;
 
 import com.f4.notification.avro.EventEnvelope;
-import com.f4.notification.avro.NotificationDTO;
+import com.f4.notification.avro.ReelDTO;
 
 /**
  * A job runner for managing Kafka consumer tasks.
@@ -53,7 +53,7 @@ public class KafkaJobRunner {
      * @param payload   payload data for processing
      * @param task      the task to execute
      */
-    public void submitJob(String jobId, String eventName, NotificationDTO payload, Runnable task) {
+    public void submitJob(String jobId, String eventName, ReelDTO payload, Runnable task) {
         log.debug("Submitting job {} for event {}", jobId, eventName);
         executorService.submit(() -> {
             try {
