@@ -3,14 +3,14 @@ package com.f4.notification.kafka.handler.events;
 import org.springframework.stereotype.Component;
 
 import com.f4.notification.kafka.handler.EventHandler;
-import com.f4.notification.service.ReelService;
-import com.f4.notification.service.dto.ReelDTO;
+import com.f4.notification.service.NotificationService;
+import com.f4.notification.service.dto.NotificationDTO;
 
 @Component
-public class PostReelHandler implements EventHandler<ReelDTO> {
-    private final ReelService svc;
+public class PostReelHandler implements EventHandler<NotificationDTO> {
+    private final NotificationService svc;
 
-    public PostReelHandler(ReelService svc) {
+    public PostReelHandler(NotificationService svc) {
         this.svc = svc;
     }
 
@@ -18,7 +18,7 @@ public class PostReelHandler implements EventHandler<ReelDTO> {
         return "postReel";
     }
 
-    public void handle(ReelDTO dto) {
+    public void handle(NotificationDTO dto) {
         svc.save(dto);
     }
 }
