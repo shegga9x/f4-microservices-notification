@@ -2,7 +2,7 @@
   "annotations": {
     "changelogDate": "20250422052415"
   },
-  "applications": ["ms_notification"],
+  "applications": ["gateway", "ms_notification"],
   "clientRootFolder": "ms_notification",
   "databaseType": "sql",
   "dto": "mapstruct",
